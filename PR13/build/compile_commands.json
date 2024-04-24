@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/Си/PR13/build",
+  "command": "C:/w64devkit-1.22.0/w64devkit/bin/gcc.exe   -g -o CMakeFiles/PR13.dir/main.c.obj -c D:/Си/PR13/main.c",
+  "file": "D:/Си/PR13/main.c",
+  "output": "CMakeFiles/PR13.dir/main.c.obj"
+},
+{
+  "directory": "D:/Си/PR13/build",
+  "command": "C:/w64devkit-1.22.0/w64devkit/bin/gcc.exe   -g -o CMakeFiles/PR13.dir/stack.c.obj -c D:/Си/PR13/stack.c",
+  "file": "D:/Си/PR13/stack.c",
+  "output": "CMakeFiles/PR13.dir/stack.c.obj"
+},
+{
+  "directory": "D:/Си/PR13/build",
+  "command": "C:/w64devkit-1.22.0/w64devkit/bin/gcc.exe   -g -o CMakeFiles/PR13.dir/student.c.obj -c D:/Си/PR13/student.c",
+  "file": "D:/Си/PR13/student.c",
+  "output": "CMakeFiles/PR13.dir/student.c.obj"
+}
+]
