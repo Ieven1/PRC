@@ -1,8 +1,8 @@
-# Install script for directory: E:/prog/Projects/tmp/PRC/PR13
+# Install script for directory: D:/Си/PRC/PR13
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/PR13")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/13macros")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "E:/prog/mingw64/bin/llvm-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/w64devkit-1.22.0/w64devkit/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/prog/Projects/tmp/PRC/PR13/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Си/PRC/PR13/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

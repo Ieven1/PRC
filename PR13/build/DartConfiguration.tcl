@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: E:/prog/Projects/tmp/PRC/PR13
-BuildDirectory: E:/prog/Projects/tmp/PRC/PR13/build
+SourceDirectory: D:/Си/PRC/PR13
+BuildDirectory: D:/Си/PRC/PR13/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: DESKTOP-7EC07IC
+Site: IEVEN
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-mingw32-make
+BuildName: Win32-make
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "E:/prog/mingw64/bin/cmake.exe" "E:/prog/Projects/tmp/PRC/PR13"
-MakeCommand: E:/prog/mingw64/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "D:/Си/PRC/PR13"
+MakeCommand: C:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -63,7 +63,7 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: E:/prog/mingw64/bin/clang++.exe
+Compiler: C:/w64devkit-1.22.0/w64devkit/bin/g++.exe
 CompilerVersion: 
 
 # Dynamic analysis (MemCheck)
@@ -81,7 +81,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: E:/prog/mingw64/bin/gcov.exe
+CoverageCommand: C:/w64devkit-1.22.0/w64devkit/bin/gcov.exe
 CoverageExtraFlags: -l
 
 # Testing options
