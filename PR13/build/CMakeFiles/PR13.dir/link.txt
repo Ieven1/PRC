@@ -1,0 +1,3 @@
+E:\prog\mingw64\bin\cmake.exe -E rm -f CMakeFiles\PR13.dir/objects.a
+E:\prog\mingw64\bin\llvm-ar.exe qc CMakeFiles\PR13.dir/objects.a @CMakeFiles\PR13.dir\objects1.rsp
+E:\prog\mingw64\bin\clang.exe -g -Wl,--whole-archive CMakeFiles\PR13.dir/objects.a -Wl,--no-whole-archive -o PR13.exe -Wl,--out-implib,libPR13.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\PR13.dir\linkLibs.rsp

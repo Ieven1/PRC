@@ -298,3 +298,200 @@ events:
       Running the C compiler's linker: "C:/w64devkit-1.22.0/w64devkit/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.41
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 6.2.9200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: E:/prog/mingw64/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is Clang, found in:
+        E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/3.26.3/CompilerIdC/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69"
+      binary: "E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69
+        
+        Run Build Command(s):E:/prog/mingw64/bin/cmake.exe -E env VERBOSE=1 E:/prog/mingw64/bin/mingw32-make.exe -f Makefile cmTC_83996/fast && E:/prog/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_83996.dir\\build.make CMakeFiles/cmTC_83996.dir/build
+        mingw32-make[1]: Entering directory 'E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69'
+        Building C object CMakeFiles/cmTC_83996.dir/CMakeCCompilerABI.c.obj
+        E:\\prog\\mingw64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_83996.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_83996.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_83996.dir\\CMakeCCompilerABI.c.obj -c E:\\prog\\mingw64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c
+        (built by Brecht Sanders) clang version 16.0.0
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: E:/prog/mingw64/bin
+         (in-process)
+         "E:/prog/mingw64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69 -resource-dir E:/prog/mingw64/lib/clang/16 -dependency-file "CMakeFiles\\\\cmTC_83996.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_83996.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem E:/prog/mingw64/lib/clang/16/include -internal-isystem E:/prog/mingw64/x86_64-w64-mingw32/include -internal-isystem E:/prog/mingw64/x86_64-w64-mingw32/usr/include -internal-isystem E:/prog/mingw64/include -fdebug-compilation-dir=E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69 -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_83996.dir\\\\CMakeCCompilerABI.c.obj" -x c "E:\\\\prog\\\\mingw64\\\\share\\\\cmake-3.26\\\\Modules\\\\CMakeCCompilerABI.c"
+        clang -cc1 version 16.0.0 based upon LLVM 16.0.0 default target x86_64-w64-mingw32
+        ignoring nonexistent directory "E:/prog/mingw64/x86_64-w64-mingw32/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         E:/prog/mingw64/lib/clang/16/include
+         E:/prog/mingw64/x86_64-w64-mingw32/include
+         E:/prog/mingw64/include
+        End of search list.
+        Linking C executable cmTC_83996.exe
+        E:\\prog\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_83996.dir\\link.txt --verbose=1
+        E:\\prog\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_83996.dir/objects.a
+        E:\\prog\\mingw64\\bin\\llvm-ar.exe qc CMakeFiles\\cmTC_83996.dir/objects.a @CMakeFiles\\cmTC_83996.dir\\objects1.rsp
+        E:\\prog\\mingw64\\bin\\clang.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_83996.dir/objects.a -Wl,--no-whole-archive -o cmTC_83996.exe -Wl,--out-implib,libcmTC_83996.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        (built by Brecht Sanders) clang version 16.0.0
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: E:/prog/mingw64/bin
+         "E:/prog/mingw64/bin/ld" -m i386pep -Bdynamic -o cmTC_83996.exe E:/prog/mingw64/x86_64-w64-mingw32/lib/crt2.o E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -LE:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0 -LE:/prog/mingw64/x86_64-w64-mingw32/lib -LE:/prog/mingw64/x86_64-w64-mingw32/mingw/lib -LE:/prog/mingw64/lib --whole-archive "CMakeFiles\\\\cmTC_83996.dir/objects.a" --no-whole-archive --out-implib libcmTC_83996.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
+        mingw32-make[1]: Leaving directory 'E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [E:/prog/mingw64/lib/clang/16/include]
+          add: [E:/prog/mingw64/x86_64-w64-mingw32/include]
+          add: [E:/prog/mingw64/include]
+        end of search list found
+        collapse include dir [E:/prog/mingw64/lib/clang/16/include] ==> [E:/prog/mingw64/lib/clang/16/include]
+        collapse include dir [E:/prog/mingw64/x86_64-w64-mingw32/include] ==> [E:/prog/mingw64/x86_64-w64-mingw32/include]
+        collapse include dir [E:/prog/mingw64/include] ==> [E:/prog/mingw64/include]
+        implicit include dirs: [E:/prog/mingw64/lib/clang/16/include;E:/prog/mingw64/x86_64-w64-mingw32/include;E:/prog/mingw64/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "E:/prog/mingw64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69]
+        ignore line: []
+        ignore line: [Run Build Command(s):E:/prog/mingw64/bin/cmake.exe -E env VERBOSE=1 E:/prog/mingw64/bin/mingw32-make.exe -f Makefile cmTC_83996/fast && E:/prog/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_83996.dir\\build.make CMakeFiles/cmTC_83996.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69']
+        ignore line: [Building C object CMakeFiles/cmTC_83996.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [E:\\prog\\mingw64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_83996.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_83996.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_83996.dir\\CMakeCCompilerABI.c.obj -c E:\\prog\\mingw64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c]
+        ignore line: [(built by Brecht Sanders) clang version 16.0.0]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: E:/prog/mingw64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "E:/prog/mingw64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69 -resource-dir E:/prog/mingw64/lib/clang/16 -dependency-file "CMakeFiles\\\\cmTC_83996.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_83996.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem E:/prog/mingw64/lib/clang/16/include -internal-isystem E:/prog/mingw64/x86_64-w64-mingw32/include -internal-isystem E:/prog/mingw64/x86_64-w64-mingw32/usr/include -internal-isystem E:/prog/mingw64/include -fdebug-compilation-dir=E:/prog/Projects/tmp/PRC/PR13/build/CMakeFiles/CMakeScratch/TryCompile-75dm69 -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_83996.dir\\\\CMakeCCompilerABI.c.obj" -x c "E:\\\\prog\\\\mingw64\\\\share\\\\cmake-3.26\\\\Modules\\\\CMakeCCompilerABI.c"]
+        ignore line: [clang -cc1 version 16.0.0 based upon LLVM 16.0.0 default target x86_64-w64-mingw32]
+        ignore line: [ignoring nonexistent directory "E:/prog/mingw64/x86_64-w64-mingw32/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ E:/prog/mingw64/lib/clang/16/include]
+        ignore line: [ E:/prog/mingw64/x86_64-w64-mingw32/include]
+        ignore line: [ E:/prog/mingw64/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_83996.exe]
+        ignore line: [E:\\prog\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_83996.dir\\link.txt --verbose=1]
+        ignore line: [E:\\prog\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_83996.dir/objects.a]
+        ignore line: [E:\\prog\\mingw64\\bin\\llvm-ar.exe qc CMakeFiles\\cmTC_83996.dir/objects.a @CMakeFiles\\cmTC_83996.dir\\objects1.rsp]
+        ignore line: [E:\\prog\\mingw64\\bin\\clang.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_83996.dir/objects.a -Wl --no-whole-archive -o cmTC_83996.exe -Wl --out-implib libcmTC_83996.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [(built by Brecht Sanders) clang version 16.0.0]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: E:/prog/mingw64/bin]
+        link line: [ "E:/prog/mingw64/bin/ld" -m i386pep -Bdynamic -o cmTC_83996.exe E:/prog/mingw64/x86_64-w64-mingw32/lib/crt2.o E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -LE:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0 -LE:/prog/mingw64/x86_64-w64-mingw32/lib -LE:/prog/mingw64/x86_64-w64-mingw32/mingw/lib -LE:/prog/mingw64/lib --whole-archive "CMakeFiles\\\\cmTC_83996.dir/objects.a" --no-whole-archive --out-implib libcmTC_83996.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
+          arg [E:/prog/mingw64/bin/ld] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_83996.exe] ==> ignore
+          arg [E:/prog/mingw64/x86_64-w64-mingw32/lib/crt2.o] ==> obj [E:/prog/mingw64/x86_64-w64-mingw32/lib/crt2.o]
+          arg [E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o] ==> obj [E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o]
+          arg [-LE:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0] ==> dir [E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0]
+          arg [-LE:/prog/mingw64/x86_64-w64-mingw32/lib] ==> dir [E:/prog/mingw64/x86_64-w64-mingw32/lib]
+          arg [-LE:/prog/mingw64/x86_64-w64-mingw32/mingw/lib] ==> dir [E:/prog/mingw64/x86_64-w64-mingw32/mingw/lib]
+          arg [-LE:/prog/mingw64/lib] ==> dir [E:/prog/mingw64/lib]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\\\cmTC_83996.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_83996.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o] ==> obj [E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse library dir [E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0] ==> [E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0]
+        collapse library dir [E:/prog/mingw64/x86_64-w64-mingw32/lib] ==> [E:/prog/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [E:/prog/mingw64/x86_64-w64-mingw32/mingw/lib] ==> [E:/prog/mingw64/x86_64-w64-mingw32/mingw/lib]
+        collapse library dir [E:/prog/mingw64/lib] ==> [E:/prog/mingw64/lib]
+        implicit libs: [mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32]
+        implicit objs: [E:/prog/mingw64/x86_64-w64-mingw32/lib/crt2.o;E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o;E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
+        implicit dirs: [E:/prog/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0;E:/prog/mingw64/x86_64-w64-mingw32/lib;E:/prog/mingw64/x86_64-w64-mingw32/mingw/lib;E:/prog/mingw64/lib]
+        implicit fwks: []
+      
+      
+...

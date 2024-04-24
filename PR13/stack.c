@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "stack.h"
 
 void* insertNode(void* arg) {
@@ -78,20 +79,6 @@ void* sortStudentsByMathGrade(void* arg) {
 }
 
 struct Node* initNode() {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-    if (newNode == NULL) {
-        printf("Memory allocation failed\n");
-    }
-    struct Student student;
-    initStudent(&student, "", "", ' ', 0, "", 0, 0, 0);
-
-    newNode->data = student;
-    newNode->next = NULL;
-    newNode->displayStudentList = displayStudentList;
-    newNode->sortStudentsByMathGrade = sortStudentsByMathGrade;
-    newNode->insertNode = insertNode;
-    return newNode;
-}struct Node* initNode() {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     if (newNode == NULL) {
         printf("Memory allocation failed\n");
