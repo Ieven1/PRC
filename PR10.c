@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 struct Student {
     char lastName[50];
     char firstName[50];
@@ -100,6 +101,9 @@ void sortStudentsByMathGrade(struct Node** head) {
 }
 
 int main() {
+
+    system("chcp 65001"); //Кодировка !!ВАЖНО!!
+
     struct Node* head = NULL;
 
     struct Student student1, student2, student3;
