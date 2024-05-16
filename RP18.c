@@ -28,5 +28,15 @@ int main() {
 
     wprintf(L"Текст с измененным регистром: %ls\n", str);
 
+    FILE* file = fopen("output.txt", "w");
+    if(file) {
+        fwprintf(file, L"Тектс: %ls\n", str);
+        fclose(file);
+    }
+    else {
+        wprintf(L"NE VERNO\n");
+        return 0; 
+    }
+
     return 0;
 }
