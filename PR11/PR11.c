@@ -120,6 +120,7 @@ struct Student* initStudent(char *lastName, char *firstName, char *gender, int a
 };
 
 int main() {
+    system("chcp 65001");
 
     struct Student* student1 = initStudent( "Иванов", "Иван", "M", 16, "Группа1", 5.0f, 4.9f, 5.0f);
     struct Student* student2 = initStudent( "Петров", "Петр", "M", 17, "Группа2", 3.7f, 4.1f, 5.0f);
